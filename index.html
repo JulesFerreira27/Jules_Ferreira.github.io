@@ -209,6 +209,17 @@ address{font-style:normal;line-height:1.55}
 .collab .caff{font-size:.92rem;color:var(--muted);margin-top:.3rem;line-height:1.45}
 .collab .ctopic{font:400 .78rem/1.45 var(--mono);color:var(--accent-ink);margin-top:.6rem}
 @media (max-width:860px){.collab{grid-template-columns:minmax(0,1fr)}}
+.feature{display:grid;grid-template-columns:9rem minmax(0,1fr);gap:1.3rem;align-items:start;margin-top:1.2rem;padding:1.1rem;background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:4px}
+.feature img{width:100%;height:auto;display:block;border-radius:3px}
+.feature h3{font-size:1.1rem;margin-top:.4rem;line-height:1.3}
+.feature h3 a{color:var(--fg);text-decoration:none}
+.feature h3 a:hover{color:var(--accent-ink);text-decoration:underline}
+.feature p{font-size:.96rem;margin-top:.5rem}
+.feature .fref{font:400 .8rem/1.5 var(--mono);color:var(--muted)}
+.news{list-style:none;margin:1rem 0 0;padding:0;display:flex;flex-direction:column;gap:.6rem}
+.news li{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1rem;font-size:.95rem}
+.news .ndate{font:500 .78rem/1.6 var(--mono);color:var(--accent-ink)}
+@media (max-width:860px){.feature{grid-template-columns:6rem minmax(0,1fr);gap:.9rem}.news li{grid-template-columns:minmax(0,1fr);gap:.1rem}}
 footer.foot{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule);font:400 .76rem/1.5 var(--mono);color:var(--muted)}
 
 /* ---------- narrow screens ---------- */
@@ -285,6 +296,19 @@ footer.foot{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule
     <figure class="portrait">
       <img src="img/photo.jpg" alt="Portrait of Jules Ferreira" width="520" height="650">
     </figure>
+  </div>
+
+  <div>
+    <h2 class="sub">Latest news</h2>
+    <article class="feature">
+      <a class="zoomable" href="img/fig/cnopus.jpg" data-zoom data-caption="†Cnopus twentyonepilotorum Ferreira &amp; Nel, 2026 in Oise amber and its 3D reconstruction · ZooKeys (2026)"><img src="img/fig/cnopus_t.jpg" alt="Cnopus twentyonepilotorum in Oise amber and its synchrotron 3D reconstruction" width="440" height="450" loading="lazy"></a>
+      <div>
+        <div class="label">New paper · November 2026</div>
+        <h3><a href="https://doi.org/10.3897/zookeys.1297.210120" target="_blank" rel="noopener">First fossil puppet beetle described from the 53-million-year-old Oise amber</a></h3>
+        <p>†<i>Cnopus twentyonepilotorum</i> Ferreira &amp; Nel, 2026 is the first puppet beetle (Aderidae) formally described from the lowermost Eocene Oise amber of France, studied with synchrotron X-ray microtomography. Its name honours the band Twenty One Pilots.</p>
+        <p class="fref">Ferreira et al. (2026) <i>ZooKeys</i> 1297: 153–180 · <a href="https://doi.org/10.3897/zookeys.1297.210120" target="_blank" rel="noopener">Open access article ↗</a></p>
+      </div>
+    </article>
   </div>
 
   <div>
