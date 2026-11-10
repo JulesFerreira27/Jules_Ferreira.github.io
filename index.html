@@ -209,13 +209,16 @@ address{font-style:normal;line-height:1.55}
 .collab .caff{font-size:.92rem;color:var(--muted);margin-top:.3rem;line-height:1.45}
 .collab .ctopic{font:400 .78rem/1.45 var(--mono);color:var(--accent-ink);margin-top:.6rem}
 @media (max-width:860px){.collab{grid-template-columns:minmax(0,1fr)}}
+.feature + .feature{margin-top:1rem}
 .feature{display:grid;grid-template-columns:9rem minmax(0,1fr);gap:1.3rem;align-items:start;margin-top:1.2rem;padding:1.1rem;background:var(--surface);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:4px}
 .feature img{width:100%;height:auto;display:block;border-radius:3px}
 .feature h3{font-size:1.1rem;margin-top:.4rem;line-height:1.3}
 .feature h3 a{color:var(--fg);text-decoration:none}
 .feature h3 a:hover{color:var(--accent-ink);text-decoration:underline}
 .feature p{font-size:.96rem;margin-top:.5rem}
-.feature .fref{font:400 .8rem/1.5 var(--mono);color:var(--muted)}
+.feature .fref{font-size:.85rem;line-height:1.5;color:var(--muted)}
+.feature .fref b{color:var(--fg);font-weight:600}
+.feature .fref a{overflow-wrap:anywhere}
 .news{list-style:none;margin:1rem 0 0;padding:0;display:flex;flex-direction:column;gap:.6rem}
 .news li{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1rem;font-size:.95rem}
 .news .ndate{font:500 .78rem/1.6 var(--mono);color:var(--accent-ink)}
@@ -301,12 +304,21 @@ footer.foot{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule
   <div>
     <h2 class="sub">Latest news</h2>
     <article class="feature">
+      <a class="zoomable" href="img/fig/dytbio.jpg" data-zoom data-caption="Graphical abstract · Systematic Entomology (2026)"><img src="img/fig/dytbio_t.jpg" alt="Graphical abstract: a diving beetle, range size by habitat type and a world map of dispersal routes" width="440" height="367" loading="lazy"></a>
+      <div>
+        <div class="label">New paper · November 2026</div>
+        <h3><a href="https://doi.org/10.1111/syen.70076" target="_blank" rel="noopener">Where did diving beetles come from, and what shapes their range size?</a></h3>
+        <p>We reconstructed the historical biogeography of diving beetles (Dytiscidae), which probably originated in the Nearctic during the Late Triassic (c. 210 Ma), and found that habitat type, niche breadth and diversification rates are associated with their range size, whereas body size is not.</p>
+        <p class="fref"><b>Ferreira, J.</b>, Toussaint, E. F. A., &amp; Condamine, F. L. · <a href="https://doi.org/10.1111/syen.70076" target="_blank" rel="noopener">Read the article ↗</a></p>
+      </div>
+    </article>
+    <article class="feature">
       <a class="zoomable" href="img/fig/cnopus.jpg" data-zoom data-caption="†Cnopus twentyonepilotorum Ferreira &amp; Nel, 2026 in Oise amber and its 3D reconstruction · ZooKeys (2026)"><img src="img/fig/cnopus_t.jpg" alt="Cnopus twentyonepilotorum in Oise amber and its synchrotron 3D reconstruction" width="440" height="450" loading="lazy"></a>
       <div>
         <div class="label">New paper · November 2026</div>
         <h3><a href="https://doi.org/10.3897/zookeys.1297.210120" target="_blank" rel="noopener">First fossil puppet beetle described from the 53-million-year-old Oise amber</a></h3>
         <p>†<i>Cnopus twentyonepilotorum</i> Ferreira &amp; Nel, 2026 is the first puppet beetle (Aderidae) formally described from the lowermost Eocene Oise amber of France, studied with synchrotron X-ray microtomography. Its name honours the band Twenty One Pilots.</p>
-        <p class="fref">Ferreira et al. (2026) <i>ZooKeys</i> 1297: 153–180 · <a href="https://doi.org/10.3897/zookeys.1297.210120" target="_blank" rel="noopener">Open access article ↗</a></p>
+        <p class="fref"><b>Ferreira, J.</b>, Spiessberger, E. L., Nel, A., Patera, A., &amp; Peris, D. · <a href="https://doi.org/10.3897/zookeys.1297.210120" target="_blank" rel="noopener">Read the article ↗</a></p>
       </div>
     </article>
   </div>
@@ -394,10 +406,10 @@ footer.foot{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule
     <article class="pub">
       <a class="fig" href="img/fig/dytbio.jpg" data-zoom data-caption="Graphical abstract · Systematic Entomology (2026)"><img src="img/fig/dytbio_t.jpg" alt="Graphical abstract: a diving beetle, range size by habitat type (lotic, lentic, both) and a world map of dispersal routes between biogeographic regions" width="440" height="367" loading="lazy"></a>
       <div>
-        <div class="pub-meta"><span class="yr">2026</span><span class="jr">Systematic Entomology</span><span class="badge">IF 4.3</span><span class="badge soft">Accepted</span></div>
-        <h3>Exploring the historical biogeography of diving beetles (Coleoptera: Adephaga: Dytiscidae) and the determinants of their biogeographic range size</h3>
+        <div class="pub-meta"><span class="yr">2026</span><span class="jr">Systematic Entomology</span><span class="badge">IF 4.3</span></div>
+        <h3><a href="https://doi.org/10.1111/syen.70076" target="_blank" rel="noopener">Exploring the historical biogeography of diving beetles (Coleoptera: Adephaga: Dytiscidae) and the determinants of their biogeographic range size</a></h3>
         <p class="result">A dated genus-level phylogeny covering 76% of genera places the origin of diving beetles in the Nearctic (or Nearctic + Neotropics) in the Late Triassic (c. 210 Ma); habitat type, niche breadth and diversification rates are associated with range size, whereas body size is not.</p>
-        <p class="ref"><b>Ferreira, J.</b>, Toussaint, E. F. A., &amp; Condamine, F. L. (2026). <i>Systematic Entomology</i>, accepted.</p>
+        <p class="ref"><b>Ferreira, J.</b>, Toussaint, E. F. A., &amp; Condamine, F. L. (2026). <i>Systematic Entomology</i>, 51, e70076.<br><a href="https://doi.org/10.1111/syen.70076" target="_blank" rel="noopener">https://doi.org/10.1111/syen.70076</a></p>
       </div>
     </article>
 
