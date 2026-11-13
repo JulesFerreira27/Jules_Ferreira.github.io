@@ -132,6 +132,8 @@ svg.strip{display:block;width:100%;min-width:640px;height:auto}
 
 /* ---------- publications ---------- */
 .pub-list{display:flex;flex-direction:column;gap:2rem}
+.yr-sep{display:flex;align-items:center;gap:.8rem;margin:0;font:500 .9rem/1 var(--mono);letter-spacing:.06em;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.yr-sep::after{content:"";flex:1;border-top:1px solid var(--rule)}
 .pub{display:grid;grid-template-columns:10.5rem minmax(0,1fr);gap:1.6rem;align-items:start}
 .pub .fig{display:block;cursor:zoom-in;text-decoration:none;color:var(--muted)}
 .pub .fig img{width:100%;height:auto;display:block;border:1px solid var(--rule);border-radius:3px;background:#fff;transition:border-color .15s}
@@ -421,6 +423,7 @@ footer.foot{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule
 
   <div class="pub-list">
     <!-- one publication: copy an <article> block to add a new one -->
+    <h2 class="yr-sep">2026</h2>
     <article class="pub">
       <a class="fig" href="img/fig/palaeocnopus.jpg" data-zoom data-caption="†Palaeocnopus testardi Ferreira, 2026 in Oise amber and its 3D reconstruction · Fossil Record (2026)"><img src="img/fig/palaeocnopus_t.jpg" alt="Palaeocnopus testardi in Oise amber (left) and its synchrotron 3D reconstruction (right)" width="440" height="447" loading="lazy"></a>
       <div>
@@ -509,6 +512,8 @@ footer.foot{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule
         <p class="ref"><b>Ferreira, J.</b>, Jordal, B. H., Condamine, F. L., &amp; Peris, D. (2026). <i>Systematic Biology</i>, syag015.<br><a href="https://doi.org/10.1093/sysbio/syag015" target="_blank" rel="noopener">https://doi.org/10.1093/sysbio/syag015</a></p>
       </div>
     </article>
+
+    <h2 class="yr-sep">2024</h2>
 
     <article class="pub">
       <a class="fig" href="img/fig/hydro.jpg" data-zoom data-caption="Habitus of Hydroporus queneyi Manuel &amp; Ferreira, 2024 · Zootaxa (2024)"><img src="img/fig/hydro_t.jpg" alt="Habitus of the diving beetle Hydroporus queneyi in dorsal view" width="440" height="636" loading="lazy"></a>
