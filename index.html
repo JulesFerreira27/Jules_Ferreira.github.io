@@ -225,6 +225,19 @@ address{font-style:normal;line-height:1.55}
 .news li{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1rem;font-size:.95rem}
 .news .ndate{font:500 .78rem/1.6 var(--mono);color:var(--accent-ink)}
 @media (max-width:860px){.feature{grid-template-columns:6rem minmax(0,1fr);gap:.9rem}.news li{grid-template-columns:minmax(0,1fr);gap:.1rem}}
+/* ---------- outreach ---------- */
+.reach-stats{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.8rem;list-style:none;padding:0}
+.reach-stats li{font:500 .78rem/1.25 var(--mono);background:var(--chip);color:var(--accent-ink);padding:.42rem .6rem;border-radius:3px}
+.altm{margin-top:.9rem;min-height:1px}
+.press{list-style:none;margin:.4rem 0 0;padding:0}
+.press li{display:grid;grid-template-columns:6.5rem minmax(0,1fr) auto;gap:1rem;align-items:baseline;padding-block:.8rem;border-bottom:1px solid var(--rule)}
+.press .pdate{font:500 .78rem/1.5 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.press a{text-decoration:none;color:var(--fg);min-width:0}
+.press a:hover .outlet,.press a:focus-visible .outlet{color:var(--accent-ink);text-decoration:underline}
+.press .outlet{display:block;font:700 1rem/1.3 var(--display)}
+.press .headline{display:block;font-size:.93rem;color:var(--muted);margin-top:.15rem}
+.press .lang{font:500 .7rem/1 var(--mono);letter-spacing:.06em;color:var(--muted);border:1px solid var(--rule);border-radius:3px;padding:.3rem .4rem}
+@media (max-width:860px){.press li{grid-template-columns:minmax(0,1fr) auto;gap:.2rem .8rem}.press .pdate{grid-column:1 / -1}}
 footer.foot{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule);font:400 .76rem/1.5 var(--mono);color:var(--muted)}
 
 /* ---------- narrow screens ---------- */
@@ -261,6 +274,7 @@ footer.foot{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule
       <a href="#about">About</a>
       <a href="#publications">Publications</a>
       <a href="#congresses">Congresses &amp; seminars</a>
+      <a href="#outreach">Outreach</a>
       <a href="#funding">Funding</a>
       <a href="#experience">Experience</a>
       <a href="#collaborations">Collaborations</a>
@@ -321,6 +335,7 @@ footer.foot{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule
         <h3><a href="https://doi.org/10.3897/zookeys.1297.210120" target="_blank" rel="noopener">First fossil puppet beetle described from the 53-million-year-old Oise amber</a></h3>
         <p>†<i>Cnopus twentyonepilotorum</i> Ferreira &amp; Nel, 2026 is the first puppet beetle (Aderidae) formally described from the lowermost Eocene Oise amber of France, studied with synchrotron X-ray microtomography. Its name honours the band Twenty One Pilots.</p>
         <p class="fref"><b>Ferreira, J.</b>, Spiessberger, E. L., Nel, A., Patera, A., &amp; Peris, D. · <a href="https://doi.org/10.3897/zookeys.1297.210120" target="_blank" rel="noopener">Read the article ↗</a></p>
+        <div class="altm"><div class="altmetric-embed" data-badge-type="medium-donut" data-badge-details="right" data-doi="10.3897/zookeys.1297.210120" data-link-target="_blank"></div></div>
       </div>
     </article>
   </div>
@@ -584,6 +599,56 @@ footer.foot{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule
   </div>
 </section>
 
+<!-- ===================== OUTREACH ===================== -->
+<section data-tab="outreach" id="outreach" aria-label="Science outreach">
+  <div class="sec-title">
+    <div class="label">Science outreach</div>
+    <h1>Fossils in the news</h1>
+    <p>Some fossils travel far beyond scientific journals. Here are the species I described that caught the attention of the press and of the wider public.</p>
+  </div>
+
+  <div>
+    <article class="feature">
+      <a class="zoomable" href="img/fig/cnopus.jpg" data-zoom data-caption="†Cnopus twentyonepilotorum Ferreira &amp; Nel, 2026 in Oise amber and its 3D reconstruction · ZooKeys (2026)"><img src="img/fig/cnopus_t.jpg" alt="Cnopus twentyonepilotorum in Oise amber and its synchrotron 3D reconstruction" width="440" height="450" loading="lazy"></a>
+      <div>
+        <div class="label">Science meets music · November 2026</div>
+        <h3>†<i>Cnopus twentyonepilotorum</i>, a 53-million-year-old beetle named after Twenty One Pilots</h3>
+        <p>A puppet beetle (Aderidae) the size of a poppy seed (1.09 mm), preserved in the lowermost Eocene Oise amber of France and studied with synchrotron X-ray microtomography. Its name honours the band Twenty One Pilots for helping to make mental health easier to talk about. The story reached science news sites, music media and the band’s fan community, bringing a fossil beetle to an audience that rarely hears about palaeontology.</p>
+        <ul class="reach-stats" aria-label="Press coverage in numbers">
+          <li>13 news outlets</li><li>6 languages</li><li>Europe, Americas</li><li>6,466 views on ZooKeys · 13 Nov 2026</li>
+        </ul>
+        <p class="fref"><b>Ferreira, J.</b>, Spiessberger, E. L., Nel, A., Patera, A., &amp; Peris, D. (2026). <i>ZooKeys</i>, 1297, 153–180 · <a href="https://doi.org/10.3897/zookeys.1297.210120" target="_blank" rel="noopener">Read the article ↗</a></p>
+      </div>
+    </article>
+  </div>
+
+  <div>
+    <h2 class="sub">In the press</h2>
+    <ul class="press">
+      <li><span class="pdate">13 Nov 2026</span><a href="http://ct.moreover.com/?a=60841226807&amp;p=1pl&amp;v=1&amp;x=v1PlpNLZdOmND5vvBekK4A" target="_blank" rel="noopener"><span class="outlet">Science &amp; Vie</span><span class="headline">Dans l’Oise, des chercheurs ont découvert un coléoptère piégé dans l’ambre depuis 53 millions d’années : ils l’ont baptisé en hommage au groupe Twenty One Pilots</span></a><span class="lang">FR</span></li>
+      <li><span class="pdate">12 Nov 2026</span><a href="http://ct.moreover.com/?a=60829875402&amp;p=1pl&amp;v=1&amp;x=6vubMpyJkcbcmcWe0Pd2sA" target="_blank" rel="noopener"><span class="outlet">elDiario.es</span><span class="headline">Twenty One Pilots da nombre a una nueva especie de escarabajo de 53 millones de años</span></a><span class="lang">ES</span></li>
+      <li><span class="pdate">11 Nov 2026</span><a href="https://eu.dispatch.com/story/entertainment/2026/11/11/twenty-one-pilots-beetle-species-discovered/92726960007/" target="_blank" rel="noopener"><span class="outlet">The Columbus Dispatch</span><span class="headline">Scientists name ancient beetle species after Twenty One Pilots</span></a><span class="lang">EN</span></li>
+      <li><span class="pdate">11 Nov 2026</span><a href="https://radiou.com/musicnews/twenty-one-pilots-has-new-beetle-species-named-after-their-band/" target="_blank" rel="noopener"><span class="outlet">RadioU</span><span class="headline">twenty one pilots has new beetle species named after their band</span></a><span class="lang">EN</span></li>
+      <li><span class="pdate">11 Nov 2026</span><a href="http://ct.moreover.com/?a=60827134368&amp;p=1pl&amp;v=1&amp;x=3QNhlJcOxLfQyy9jx71b5A" target="_blank" rel="noopener"><span class="outlet">AOL</span><span class="headline">Scientists name ancient beetle species after Twenty One Pilots</span></a><span class="lang">EN</span></li>
+      <li><span class="pdate">11 Nov 2026</span><a href="https://zap.aeiou.pt/um-besouro-de-53-milhoes-de-anos-ganhou-o-nome-dos-twenty-one-pilots-774295" target="_blank" rel="noopener"><span class="outlet">ZAP</span><span class="headline">Um besouro de 53 milhões de anos ganhou o nome dos Twenty One Pilots</span></a><span class="lang">PT</span></li>
+      <li><span class="pdate">10 Nov 2026</span><a href="http://ct.moreover.com/?a=60819231764&amp;p=1pl&amp;v=1&amp;x=jfbQVL_4ff3EMBo3FkjWQA" target="_blank" rel="noopener"><span class="outlet">infobae</span><span class="headline">Descubren una especie de escarabajo de 53 millones de años y la nombran en honor a una histórica banda musical</span></a><span class="lang">ES</span></li>
+      <li><span class="pdate">10 Nov 2026</span><a href="http://ct.moreover.com/?a=60815865532&amp;p=1pl&amp;v=1&amp;x=KJmUHMKmeXbAxH0zUl8nHg" target="_blank" rel="noopener"><span class="outlet">AlphaGalileo</span><span class="headline">Tiny beetle trapped in 53-million-year-old amber is named after Twenty One Pilots</span></a><span class="lang">EN</span></li>
+      <li><span class="pdate">10 Nov 2026</span><a href="http://ct.moreover.com/?a=60814778423&amp;p=1pl&amp;v=1&amp;x=KrG-ukbHoCb9MDIBxBbTQg" target="_blank" rel="noopener"><span class="outlet">Tocka</span><span class="headline">Бубачка стара 53 милиони години доби име по „Twenty One Pilots“</span></a><span class="lang">MK</span></li>
+      <li><span class="pdate">Nov 2026</span><a href="https://www.discovermagazine.com/a-poppy-seed-sized-beetle-locked-in-amber-53-million-years-ago-mirrors-its-modern-relatives-49938" target="_blank" rel="noopener"><span class="outlet">Discover Magazine</span><span class="headline">A poppy seed-sized beetle locked in amber 53 million years ago mirrors its modern relatives</span></a><span class="lang">EN</span></li>
+      <li><span class="pdate">Nov 2026</span><a href="https://snob.ru/news/zhivshego-53-mln-nazad-zhuka-nazvali-v-chest-gruppy-twenty-one-pilots/" target="_blank" rel="noopener"><span class="outlet">Snob</span><span class="headline">Жука, жившего 53 млн лет назад, назвали в честь группы Twenty One Pilots</span></a><span class="lang">RU</span></li>
+      <li><span class="pdate">9 Nov 2026</span><a href="https://phys.org/news/2026-11-tiny-beetle-million-year-amber.html" target="_blank" rel="noopener"><span class="outlet">Phys.org</span><span class="headline">Tiny beetle trapped in 53-million-year-old amber is named after Twenty One Pilots</span></a><span class="lang">EN</span></li>
+      <li><span class="pdate">9 Nov 2026</span><a href="http://ct.moreover.com/?a=60811205050&amp;p=1pl&amp;v=1&amp;x=OU0ZgNWRZQR9K7cahXPqCA" target="_blank" rel="noopener"><span class="outlet">EurekAlert!</span><span class="headline">Tiny beetle trapped in 53-million-year-old amber is named after Twenty One Pilots</span></a><span class="lang">EN</span></li>
+    </ul>
+  </div>
+
+  <div>
+    <h2 class="sub">Blogs</h2>
+    <ul class="press">
+      <li><span class="pdate">10 Nov 2026</span><a href="https://blog.pensoft.net/2026/11/10/tiny-beetle-trapped-in-53-million-year-old-amber-is-named-after-twenty-one-pilots/" target="_blank" rel="noopener"><span class="outlet">Pensoft blog</span><span class="headline">Tiny beetle trapped in 53-million-year-old amber is named after Twenty One Pilots</span></a><span class="lang">EN</span></li>
+    </ul>
+  </div>
+</section>
+
 <!-- ===================== FUNDING ===================== -->
 <section data-tab="funding" id="funding" aria-label="Funding">
   <div class="sec-title">
@@ -823,7 +888,7 @@ footer.foot{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule
 
 <script>
 (function () {
-  var TABS = ['about', 'publications', 'congresses', 'funding', 'experience', 'collaborations', 'contact'];
+  var TABS = ['about', 'publications', 'congresses', 'outreach', 'funding', 'experience', 'collaborations', 'contact'];
   var sections = Array.prototype.slice.call(document.querySelectorAll('section[data-tab]'));
   var links = Array.prototype.slice.call(document.querySelectorAll('nav.tabs a'));
   function show(h, scroll) {
@@ -885,5 +950,6 @@ footer.foot{margin-top:3.5rem;padding-top:1.2rem;border-top:1px solid var(--rule
 })();
 </script>
 
+<script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 </body>
 </html>
